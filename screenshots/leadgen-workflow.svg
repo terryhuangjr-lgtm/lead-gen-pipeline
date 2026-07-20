@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 320" font-family="system-ui, sans-serif">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0f0f23"/>
+      <stop offset="100%" stop-color="#1a1a2e"/>
+    </linearGradient>
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="2" stdDeviation="3" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+  <rect width="900" height="320" fill="url(#bg)" rx="12"/>
+  <text x="450" y="35" text-anchor="middle" fill="#60a5fa" font-size="18" font-weight="bold">Lead Gen Pipeline — Workflow</text>
+  
+  <!-- Step 1 -->
+  <rect x="30" y="70" width="160" height="100" rx="12" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="110" y="100" text-anchor="middle" fill="#60a5fa" font-size="13" font-weight="bold">1. Discovery</text>
+  <text x="110" y="120" text-anchor="middle" fill="#94a3b8" font-size="10">Google Maps Places API</text>
+  <text x="110" y="138" text-anchor="middle" fill="#94a3b8" font-size="10">Search by category +</text>
+  <text x="110" y="154" text-anchor="middle" fill="#94a3b8" font-size="10">location criteria</text>
+  
+  <line x1="190" y1="120" x2="230" y2="120" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  <defs><marker id="arrow" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 Z" fill="#475569"/></marker></defs>
+  
+  <!-- Step 2 -->
+  <rect x="235" y="70" width="160" height="100" rx="12" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="315" y="100" text-anchor="middle" fill="#60a5fa" font-size="13" font-weight="bold">2. Enrichment</text>
+  <text x="315" y="120" text-anchor="middle" fill="#94a3b8" font-size="10">Website Scraper</text>
+  <text x="315" y="138" text-anchor="middle" fill="#94a3b8" font-size="10">Extract services,</text>
+  <text x="315" y="154" text-anchor="middle" fill="#94a3b8" font-size="10">contact info, tech stack</text>
+  
+  <line x1="395" y1="120" x2="435" y2="120" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Step 3 -->
+  <rect x="440" y="70" width="160" height="100" rx="12" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="520" y="100" text-anchor="middle" fill="#60a5fa" font-size="13" font-weight="bold">3. AI Scoring</text>
+  <text x="520" y="120" text-anchor="middle" fill="#94a3b8" font-size="10">Claude AI + Heuristics</text>
+  <text x="520" y="138" text-anchor="middle" fill="#94a3b8" font-size="10">Score fit based on</text>
+  <text x="520" y="154" text-anchor="middle" fill="#94a3b8" font-size="10">ICP criteria</text>
+  
+  <line x1="600" y1="120" x2="640" y2="120" stroke="#475569" stroke-width="2" marker-end="url(#arrow)"/>
+  
+  <!-- Step 4 -->
+  <rect x="645" y="70" width="160" height="100" rx="12" fill="#1e3a5f" stroke="#3b82f6" stroke-width="2" filter="url(#shadow)"/>
+  <text x="725" y="100" text-anchor="middle" fill="#60a5fa" font-size="13" font-weight="bold">4. Outreach</text>
+  <text x="725" y="120" text-anchor="middle" fill="#94a3b8" font-size="10">Gmail API</text>
+  <text x="725" y="138" text-anchor="middle" fill="#94a3b8" font-size="10">Generate personalized</text>
+  <text x="725" y="154" text-anchor="middle" fill="#94a3b8" font-size="10">draft per lead</text>
+  
+  <!-- Database label below -->
+  <rect x="250" y="220" width="400" height="50" rx="25" fill="#1a1a2e" stroke="#3ecf8e" stroke-width="1.5" filter="url(#shadow)"/>
+  <text x="450" y="250" text-anchor="middle" fill="#3ecf8e" font-size="13">Supabase (PostgreSQL) — Pipeline data storage</text>
+  
+  <line x1="315" y1="170" x2="315" y2="220" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  <line x1="520" y1="170" x2="520" y2="220" stroke="#475569" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#arrow)"/>
+  
+  <!-- Schedule label -->
+  <text x="450" y="300" text-anchor="middle" fill="#64748b" font-size="11">⏰ Runs on configurable cron — daily digest of new leads</text>
+</svg>

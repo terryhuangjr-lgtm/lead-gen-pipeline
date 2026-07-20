@@ -26,6 +26,10 @@ An automated pipeline that discovers local businesses fitting your ideal custome
 
 ## ✨ How It Works
 
+![Pipeline Workflow](screenshots/leadgen-workflow.svg)
+
+
+
 ```
 ┌────────────────┐    ┌────────────────┐    ┌────────────────┐
 │  Google Maps   │    │  Website       │    │  AI Scoring    │
